@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+                body{
+                    background: url(http://vignette2.wikia.nocookie.net/steamtradingcards/images/9/9a/Syder_Arcade_Background_Opposing_Forces.jpg/revision/latest?cb=20140831224527 ) no-repeat center center fixed; 
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;
+                    }
+        </style>
+        <title>Dog Ball</title>
+    </head>
+
+    <body style="margin: 0; padding: 0">
+        <div style="position: absolute; width: 1400px; height: 800px; border: 1px black solid; margin: 0; padding: 0;"></div>
+        <img id="ball" style="position: absolute" src="http://darron.net/wp-content/uploads/sites/6/2013/11/huge_red_ball.jpg" width="150"/>
+
+        <script type="text/javascript">
+            var image = document.getElementById("ball");
+            var width = 1400;
+            var height = 800;
+
+            var x = 600;
+            var y = 500;
+
+            var xSpeed = 2;
+            var ySpeed = 2;
+
+            function gameStep() {
+                if (x + image.width > width || x < 0) {
+                    xSpeed = -xSpeed;
+                }
+                if (y + image.height > height || y < 0) {
+                    ySpeed = -ySpeed;
+                }
+
+                x = x + xSpeed;
+                y = y + ySpeed;
+
+
+                image.style.left = x + "px";
+                image.style.top = y + "px";
+            };
+
+            setInterval(gameStep, 5);
+        </script>
+    </body>
+</html>
