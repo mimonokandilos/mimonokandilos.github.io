@@ -1,0 +1,26 @@
+<html><head>
+    <title>choochootrain</title>
+    <link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/three.js/r68/three.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="everything">
+        <center>
+          <span class="tagline">i have no idea what i'm doing</span>
+          <br>
+          <br>
+          <a href="https://github.com/choochootrain">@choochootrain</a><br>
+        </center>
+      </div>
+    </div>
+
+    <div id="glcontainer">
+  
+
+<canvas width="875" height="696" style="width: 875px; height: 696px;"></canvas></div></body>
+</html>
